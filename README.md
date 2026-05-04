@@ -1,16 +1,113 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🌐 Vaishnavi Chaudhari - Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Welcome to my personal portfolio website!
+This project showcases my skills, projects, and experience as a Full Stack MERN Developer.
 
-## React Compiler
+🔗 Live Website:
+👉 https://vaishnavi-chaudhari-portfolio.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Tech Stack
+
+⚛️ React.js
+
+🎨 Tailwind CSS
+
+🌐 HTML5
+
+📦 JavaScript (ES6+)
+
+🚀 Vercel (Deployment)
+
+
+
+---
+
+✨ Features
+
+📱 Fully Responsive Design
+
+🎯 Clean and Modern UI
+
+🧑‍💻 About Me Section
+
+💼 Projects Showcase
+
+📄 Resume Download
+
+📬 Contact Section
+
+
+
+---
+
+📸 Preview
+
+
+
+---
+
+📁 Folder Structure
+
+portfolio/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── App.js
+│── package.json
+│── tailwind.config.js
+
+
+
+
+---
+
+📌 Projects Included
+
+🤖 AI Content Creator
+
+💬 ChatGPT Clone
+
+
+
+---
+
+🙋‍♀️ About Me
+
+I am a final-year MCA student passionate about building real-world web applications using the MERN stack.
+I enjoy solving problems, learning new technologies, and creating user-friendly applications.
+
+
+---
+
+📬 Contact Me
+
+📧 Email: vaishnavichaudhari910@gmail.com
+
+💼 LinkedIn: https://linkedin.com/in/your-linkedin
+
+🌐 Portfolio: https://vaishnavi-chaudhari-portfolio.vercel.app/
+
+
+
+---
+
+⭐ Show Your Support
+
+If you like this project, please ⭐ the repository!
+
+
+---
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+
+---
