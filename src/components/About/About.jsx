@@ -2,15 +2,20 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/vaishnavi_circle.png';
-
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <section
-      id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[4vw] font-sans mt-16 md:mt-24 lg:mt-10"
-    >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
-        {/* Left Side */}
+  id="about"
+  className="py-4 px-[7vw] md:px-[7vw] lg:px-[4vw] font-sans mt-16 md:mt-24 lg:mt-10"
+>
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="flex flex-col-reverse md:flex-row justify-between items-center"
+  >   {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           {/* Greeting */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
@@ -75,7 +80,7 @@ const About = () => {
             />
           </Tilt>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
