@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
+import { motion } from "framer-motion";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: i * 0.2,
+      ease: "easeOut",
+    },
+  }),
+};
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -30,11 +43,17 @@ const Work = () => {
       {/* Projects Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <div
-            key={project.id}
-            onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
-          >
+          <motion.div
+  key={project.id}
+  custom={project.id}
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  onClick={() => handleOpenModal(project)}
+  whileHover={{ y: -10, scale: 1.03 }}
+  className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 transition-all duration-300"
+>
             <div className="p-4">
               <img
                 src={project.image}
@@ -60,7 +79,7 @@ const Work = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
