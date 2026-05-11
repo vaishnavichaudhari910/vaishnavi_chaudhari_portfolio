@@ -1,5 +1,19 @@
 import React from "react";
-import { experiences } from "../../constants"; // Import your data
+import { motion } from "framer-motion";
+import { experiences } from "../../constants";
+
+const fadeLeft = {
+  hidden: { opacity: 0, x: 80 },
+  visible: (i) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.7,
+      delay: i * 0.2,
+      ease: "easeOut",
+    },
+  }),
+};
 
 const Experience = () => {
   return (
@@ -8,14 +22,20 @@ const Experience = () => {
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[4vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
         <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
-      </div>
+      </motion.div>
 
       {/* Experience Timeline */}
       <div className="relative">
@@ -24,8 +44,13 @@ const Experience = () => {
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
-          <div
+          <motion.div
             key={experience.id}
+            custom={index}
+            vvariants={fadeLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             className={`flex flex-col sm:flex-row items-center mb-16 ${
               index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
             }`}
@@ -40,10 +65,11 @@ const Experience = () => {
             </div>
 
             {/* Content Section */}
-            <div
+            <motion.div
+              whileHover={{ scale: 1.05 }}
               className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              } sm:ml-44 sm:mr-44 ml-8`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
@@ -66,27 +92,32 @@ const Experience = () => {
                       {experience.company}
                     </h4>
                   </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
+                  </p>
                 </div>
               </div>
 
               <p className="mt-4 text-gray-400">{experience.desc}</p>
+
               <div className="mt-4">
                 <h5 className="font-medium text-white">Skills:</h5>
+
                 <ul className="flex flex-wrap mt-2">
                   {experience.skills.map((skill, index) => (
-                    <li
+                    <motion.li
                       key={index}
+                      whileHover={{ scale: 1.1 }}
                       className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
                     >
                       {skill}
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </section>
