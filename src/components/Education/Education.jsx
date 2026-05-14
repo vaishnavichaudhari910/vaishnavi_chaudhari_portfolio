@@ -1,5 +1,6 @@
 import React from "react";
 import { education } from "../../constants"; // Import the education data
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
@@ -8,13 +9,19 @@ const Education = () => {
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
+     <motion.div
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="text-center mb-16"
+>
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           My education has been a journey of learning and development. Here are the details of my academic background
         </p>
-      </div>
+      </motion.div>
 
       {/* Education Timeline */}
       <div className="relative">
@@ -23,8 +30,12 @@ const Education = () => {
 
         {/* Education Entries */}
         {education.map((edu, index) => (
-          <div
-            key={edu.id}
+          <motion.div
+  key={edu.id}
+  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.7, delay: index * 0.2 }}
+  viewport={{ once: true }}
             className={`flex flex-col sm:flex-row items-center mb-16 ${
               index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
             }`}
@@ -73,7 +84,7 @@ const Education = () => {
               <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
               <p className="mt-4 text-gray-400">{edu.desc}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
