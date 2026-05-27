@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
   id="about"
-  className="py-4 px-[7vw] md:px-[7vw] lg:px-[4vw] font-sans mt-16 md:mt-24 lg:mt-10"
+  className="py-2 px-[7vw] md:px-[7vw] lg:px-[4vw] font-sans mt-6 md:mt-2 lg:mt-10"
 >
   <motion.div
     initial={{ opacity: 0, y: 50 }}
