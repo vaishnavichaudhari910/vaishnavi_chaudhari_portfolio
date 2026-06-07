@@ -170,7 +170,7 @@ export const SkillsInfo = [
     "Cloudinary",
   ],
   github: "https://github.com/vaishnavichaudhari910/Prompta_AI",
-  webapp: "https://prompta-ai.vercel.app/",
+  webapp: "https://prompta-ai-eight.vercel.app/",
 },
    {
   id: 1,
