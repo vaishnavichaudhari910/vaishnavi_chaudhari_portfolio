@@ -183,6 +183,7 @@ export const SkillsInfo = [
     "Node.js",
     "Express",
     "MongoDB",
+    
     "JavaScript",
     "JWT",
     "Gemini API",

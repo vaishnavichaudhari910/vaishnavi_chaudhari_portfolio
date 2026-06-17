@@ -3,19 +3,32 @@ import { TypeAnimation } from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/vaishnavi_circle.png';
 import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
 const About = () => {
   return (
     <section
   id="about"
   className="py-2 px-[7vw] md:px-[7vw] lg:px-[4vw] font-sans mt-6 md:mt-2 lg:mt-10"
 >
+  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-green-500/30 mb-6">
+  <span className="relative flex h-3 w-3">
+    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+  </span>
+
+  <span className="text-sm font-medium bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+    Open to Full Stack Developer Opportunities
+  </span>
+</div>
   <motion.div
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
     viewport={{ once: true }}
+    
     className="flex flex-col-reverse md:flex-row justify-between items-center"
-  >   {/* Left Side */}
+  >   
+  {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           {/* Greeting */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
