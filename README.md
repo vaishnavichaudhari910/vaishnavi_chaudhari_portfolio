@@ -8,7 +8,6 @@ This project showcases my skills, projects, and experience as a Full Stack MERN 
 🔗 Live Website:
 👉 https://vaishnavi-chaudhari-portfolio.vercel.app/
 
-
 ---
 
 🚀 Tech Stack
