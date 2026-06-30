@@ -31,7 +31,8 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
 
 import Clerk from './assets/tech_logo/Clerk.png';
-
+import typescriptLogo from "./assets/tech_logo/typescript.png";
+import nextjsLogo from "./assets/tech_logo/nextjs.png";
 // Experience Section Logo's
 import uslogo from './assets/company_logo/uslogo.webp';
 
@@ -44,7 +45,7 @@ import DNVKLogo from './assets/education_logo/DNVKLogo.jpeg';
 import Prompta from './assets/work_logo/Prompta.png';
 import QueryBot from './assets/work_logo/QueryBot.png';
 import snake from './assets/work_logo/snake.png';
-
+import DevPathAI from './assets/work_logo/DevPathAI.png';
 
 export const SkillsInfo = [
   {
@@ -59,6 +60,9 @@ export const SkillsInfo = [
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'Material UI', logo: materialuiLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: 'TypeScript', logo: typescriptLogo },
+{ name: 'Next.js', logo: nextjsLogo },
+
     ],
   },
   {
@@ -69,6 +73,8 @@ export const SkillsInfo = [
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
+      { name: 'Next.js', logo: nextjsLogo },
+
     ],
   },
   {
@@ -101,7 +107,7 @@ export const SkillsInfo = [
       img: uslogo,
       role: "MERN Stack Internship",
       company: "UpToSkills",
-      date: "January 2026 - April 2026",
+      date: "January 2026 - June 2026",
       desc: "Worked as a Full Stack Developer Intern using the MERN stack, contributing to the development of responsive and user-friendly web applications. Assisted in building frontend components with React and developing backend APIs using Node.js and Express.",
       skills: [
         "HTML",
@@ -202,5 +208,29 @@ export const SkillsInfo = [
       github: "https://github.com/vaishnavichaudhari910/Snake_Game",
       webapp: "https://snake-game-real.netlify.app/",
     },
-    
+    {
+  id: 3,
+  title: "DevPath AI | AI-Powered Developer Career Guidance Platform",
+  description:
+    "Built an AI-powered career guidance platform that helps developers analyze resumes, identify skill gaps, generate personalized learning roadmaps, and discover relevant job opportunities. Integrated Google Gemini AI, GitHub REST API, JWT Authentication, and PDF resume parsing to provide ATS scoring, GitHub insights, AI career coaching, and interview preparation. Created a responsive dashboard using React, Tailwind CSS, ShadCN UI, Framer Motion, Redux Toolkit, and MongoDB with progress tracking, personalized recommendations, and light/dark theme support.",
+  image: DevPathAI,
+  tags: [
+    "React JS",
+    "Tailwind CSS",
+    "ShadCN UI",
+    "Framer Motion",
+    "Redux Toolkit",
+    "Node JS",
+    "Express JS",
+    "MongoDB",
+    "JWT",
+    "Gemini API",
+    "GitHub API",
+    "Multer",
+    "PDF Parse",
+  ],
+  github: "https://github.com/vaishnavichaudhari910/developer-career-gps",
+  webapp: "https://developer-career-gps.vercel.app/",
+},
   ];  
+  
