@@ -107,7 +107,7 @@ export const SkillsInfo = [
       img: uslogo,
       role: "MERN Stack Internship",
       company: "UpToSkills",
-      date: "January 2026 - June 2026",
+      date: "January 2026 - July 2026",
       desc: "Worked as a Full Stack Developer Intern using the MERN stack, contributing to the development of responsive and user-friendly web applications. Assisted in building frontend components with React and developing backend APIs using Node.js and Express.",
       skills: [
         "HTML",
@@ -116,7 +116,7 @@ export const SkillsInfo = [
         "React JS",
         "Node JS",
         "Tailwind CSS",
-        "MongoDb",
+        "PostgreSql",
 
       ],
     },
@@ -129,9 +129,9 @@ export const SkillsInfo = [
       img: IMRLogo,
       school: "KCES Institute of Management And Research,Jalgaon",
       date: "June 2021 - June 2026",
-      grade: "9.63 CGPA",
-      desc: "Pursuing an Integrated Master of Computer Applications (IMCA) from KCES Institute of Management and Research, Jalgaon, with a strong academic record of 9.63 CGPA. Gained a solid foundation in core computer science subjects including Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Web Development. Developed practical skills in full-stack development (MERN) through hands-on projects and continuous learning. Actively engaged in building real-world applications, enhancing problem-solving abilities, and preparing for a career in software development.",
-      degree: "Integrated Master of Computer Applications - IMCA",
+      grade: "9.65 CGPA",
+     desc: "Completed an Integrated Master of Computer Applications (IMCA) from KCES Institute of Management and Research, Jalgaon, with a CGPA of 9.63. Developed a strong foundation in Data Structures, Algorithms, DBMS, OOP, and Web Development while gaining practical experience in MERN Stack development through real-world projects." ,   
+     degree: "Integrated Master of Computer Applications - IMCA",
     },
     {
       id: 1,
@@ -232,5 +232,24 @@ export const SkillsInfo = [
   github: "https://github.com/vaishnavichaudhari910/developer-career-gps",
   webapp: "https://developer-career-gps.vercel.app/",
 },
-  ];  
-  
+ 
+  {
+  id: 4,
+  title: "NeighbourHub AI",
+  description:
+    "A full-stack smart community platform where citizens can discover and book trusted local services, while providers manage their offerings and bookings in real time. Features role-based dashboards for citizens and providers, a 4-step booking flow with mock payment, booking accept/reject system, Cloudinary avatar uploads, and light/dark theme support.",
+  image: "https://neighbourhub-ai-w19z.vercel.app/home.png",
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "TanStack Query",
+    "Cloudinary",
+    "Vercel",
+  ],
+  github: "https://github.com/vaishnavichaudhari910/neighbourhub-ai",
+  webapp: "https://neighbourhub-ai-w19z.vercel.app/",
+},
+];
