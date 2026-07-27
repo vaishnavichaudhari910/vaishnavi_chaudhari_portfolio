@@ -79,7 +79,7 @@ const About = () => {
           {/* Resume Button */}
           <div className="mt-8 flex justify-center md:justify-start">
             <a
-              href="https://drive.google.com/file/d/1WPPxTKtZMNs4KAblRbdHC1UflOc8n59x/view?usp=sharing"
+              href="https://drive.google.com/file/d/1FrjdKI8N0yN5UVPrVd3_pUTZIvbIOUN3/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-7 py-3 rounded-full text-white text-base sm:text-lg font-bold transition-all duration-300 hover:scale-105"
