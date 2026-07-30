@@ -238,7 +238,7 @@ export const SkillsInfo = [
   title: "NeighbourHub AI",
   description:
     "A full-stack smart community platform where citizens can discover and book trusted local services, while providers manage their offerings and bookings in real time. Features role-based dashboards for citizens and providers, a 4-step booking flow with mock payment, booking accept/reject system, Cloudinary avatar uploads, and light/dark theme support.",
-  image: "https://neighbourhub-ai-w19z.vercel.app/home.png",
+  image: "https://neighbourhub-ai.vercel.app/",
   tags: [
     "Next.js",
     "TypeScript",
