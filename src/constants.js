@@ -46,6 +46,7 @@ import Prompta from './assets/work_logo/Prompta.png';
 import QueryBot from './assets/work_logo/QueryBot.png';
 import snake from './assets/work_logo/snake.png';
 import DevPathAI from './assets/work_logo/DevPathAI.png';
+import Neighbour_hub from './assets/work_logo/Neighbour_hub.png';
 
 export const SkillsInfo = [
   {
@@ -198,18 +199,18 @@ export const SkillsInfo = [
   github: "https://github.com/vaishnavichaudhari910/QueryBot",
   webapp: "https://query-bot-tawny.vercel.app/",
 },
+    // {
+    //   id: 2,
+    //   title: "Snake Game",
+    //   description:
+    //     "A classic Snake Game built using JavaScript, where players control the snake to eat food, grow longer, and avoid collisions.",
+    //   image: snake,
+    //   tags: [ "HTML", "CSS", "JavaScript"],
+    //   github: "https://github.com/vaishnavichaudhari910/Snake_Game",
+    //   webapp: "https://snake-game-real.netlify.app/",
+    // },
     {
-      id: 2,
-      title: "Snake Game",
-      description:
-        "A classic Snake Game built using JavaScript, where players control the snake to eat food, grow longer, and avoid collisions.",
-      image: snake,
-      tags: [ "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/vaishnavichaudhari910/Snake_Game",
-      webapp: "https://snake-game-real.netlify.app/",
-    },
-    {
-  id: 3,
+  id: 2,
   title: "DevPath AI | AI-Powered Developer Career Guidance Platform",
   description:
     "Built an AI-powered career guidance platform that helps developers analyze resumes, identify skill gaps, generate personalized learning roadmaps, and discover relevant job opportunities. Integrated Google Gemini AI, GitHub REST API, JWT Authentication, and PDF resume parsing to provide ATS scoring, GitHub insights, AI career coaching, and interview preparation. Created a responsive dashboard using React, Tailwind CSS, ShadCN UI, Framer Motion, Redux Toolkit, and MongoDB with progress tracking, personalized recommendations, and light/dark theme support.",
@@ -234,11 +235,11 @@ export const SkillsInfo = [
 },
  
   {
-  id: 4,
+  id: 3,
   title: "NeighbourHub AI",
   description:
     "A full-stack smart community platform where citizens can discover and book trusted local services, while providers manage their offerings and bookings in real time. Features role-based dashboards for citizens and providers, a 4-step booking flow with mock payment, booking accept/reject system, Cloudinary avatar uploads, and light/dark theme support.",
-  image: "https://neighbourhub-ai.vercel.app/",
+  image: Neighbour_hub,
   tags: [
     "Next.js",
     "TypeScript",
