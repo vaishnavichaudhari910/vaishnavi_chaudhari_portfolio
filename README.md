@@ -46,8 +46,7 @@ This project showcases my skills, projects, and experience as a Full Stack MERN 
 
 📸 Preview
 
-<img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/ae16200a-8728-4447-a2d0-292c2990eda6" />
-
+<img width="1882" height="855" alt="image" src="https://github.com/user-attachments/assets/b98448ad-1900-4992-90c4-b3b7b2ac364d" />
 
 ---
 
