@@ -78,11 +78,11 @@ const Education = () => {
       {/* Timeline */}
       <div className="relative max-w-5xl mx-auto">
         {/* Base track line */}
-        <div className="absolute left-6 sm:left-1/2 sm:-translate-x-1/2 top-0 bottom-0 w-px bg-white/10" />
+        <div className="absolute left-5 sm:left-1/2 sm:-translate-x-1/2 top-0 bottom-0 w-px bg-white/10" />
 
         {/* Animated glowing progress line */}
         <motion.div
-          className="absolute left-6 sm:left-1/2 sm:-translate-x-1/2 top-0 w-px origin-top"
+          className="absolute left-5 sm:left-1/2 sm:-translate-x-1/2 top-0 w-px origin-top"
           style={{
             background: "linear-gradient(to bottom, #8245ec, #a855f7)",
             boxShadow: "0 0 12px #8245ec",
@@ -98,12 +98,12 @@ const Education = () => {
           {education.map((edu, index) => {
             const isEven = index % 2 === 0;
             return (
-              <div key={edu.id} className="relative">
+              <div key={edu.id} className="relative w-full">
                 {/* Timeline dot */}
-                <div className="absolute left-6 sm:left-1/2 -translate-x-1/2 top-6 z-10">
-                  <span className="relative flex h-5 w-5 sm:h-6 sm:w-6">
+                <div className="absolute left-5 sm:left-1/2 -translate-x-1/2 top-6 z-10">
+                  <span className="relative flex h-4 w-4 sm:h-6 sm:w-6">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8245ec] opacity-50" />
-                    <span className="relative inline-flex items-center justify-center h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-[#0a0a0f] border-2 border-[#8245ec] overflow-hidden">
+                    <span className="relative inline-flex items-center justify-center h-4 w-4 sm:h-6 sm:w-6 rounded-full bg-[#0a0a0f] border-2 border-[#8245ec] overflow-hidden">
                       <img
                         src={edu.img}
                         alt={edu.school}
@@ -120,15 +120,17 @@ const Education = () => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className={`flex ${
+                  className={`flex w-full ${
                     isEven ? "sm:justify-start" : "sm:justify-end"
                   }`}
                 >
                   <motion.div
                     whileHover={{ y: -4 }}
                     className={`
-                      ml-16 sm:ml-0 w-full sm:w-[46%]
-                      relative rounded-2xl p-5 sm:p-6 md:p-7
+                      w-[calc(100%-2.75rem)] ml-11
+                      sm:w-[46%] sm:ml-0
+                      max-w-full box-border
+                      relative rounded-2xl p-4 sm:p-6 md:p-7
                       bg-white/[0.03] backdrop-blur-sm
                       border border-white/10
                       transition-all duration-300
@@ -137,34 +139,34 @@ const Education = () => {
                     `}
                   >
                     {/* Header */}
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg overflow-hidden bg-white/90 flex-shrink-0">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-lg overflow-hidden bg-white/90 flex-shrink-0">
                         <img
                           src={edu.img}
                           alt={edu.school}
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className="min-w-0">
-                        <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white truncate">
+                      <div className="min-w-0 flex-1">
+                        <h3 className="text-sm sm:text-lg md:text-xl font-semibold text-white break-words">
                           {edu.degree}
                         </h3>
-                        <h4 className="text-xs sm:text-sm text-gray-400 truncate">
+                        <h4 className="text-xs sm:text-sm text-gray-400 break-words">
                           {edu.school}
                         </h4>
-                        <p className="text-[11px] sm:text-xs font-mono text-[#a855f7] mt-0.5">
+                        <p className="text-[10px] sm:text-xs font-mono text-[#a855f7] mt-0.5">
                           {edu.date}
                         </p>
                       </div>
                     </div>
 
                     {/* Grade */}
-                    <div className="mt-4 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#c9a9f7] bg-[#8245ec]/10 border border-[#8245ec]/30 rounded-full px-3 py-1">
+                    <div className="mt-3 sm:mt-4 inline-flex items-center gap-1.5 text-[11px] sm:text-sm font-semibold text-[#c9a9f7] bg-[#8245ec]/10 border border-[#8245ec]/30 rounded-full px-2.5 sm:px-3 py-1">
                       Grade: {edu.grade}
                     </div>
 
                     {/* Description */}
-                    <p className="mt-4 text-sm sm:text-base text-gray-400 leading-6">
+                    <p className="mt-3 sm:mt-4 text-xs sm:text-base text-gray-400 leading-6 break-words">
                       {edu.desc}
                     </p>
                   </motion.div>
